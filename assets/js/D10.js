@@ -436,7 +436,10 @@ const addNewLi = function () {
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
-
+const addClass = function () {
+  const trCollection = document.getElementsByTagName("tr");
+  for (let i = 0; i < trCollection.length; i++) trCollection[i].className("test");
+};
 // [EXTRA] JS Avanzato
 
 /* ESERCIZIO 27
